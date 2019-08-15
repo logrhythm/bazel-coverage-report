@@ -23,7 +23,7 @@ def runfiles():
 
   Returns: A dictionary of runfiles to their real absolute paths.
   """
-  if not "runfiles" in bazel:
+  if not "runfiles" in _bazel:
     _bazel["_runfiles"] = {}
     with open(os.path.join(os.getenv("RUNFILES_MANIFEST_FILE")), 'r') as f:
       for l in f:
