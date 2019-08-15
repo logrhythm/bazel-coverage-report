@@ -24,7 +24,7 @@ from report import go
 
 
 def _warning(s):
-  print "NORMALIZATION WARNING: " + s
+  print("NORMALIZATION WARNING: " + s)
 
 
 class SourceFilenameNormalizer(object):
